@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:lts-slim
 
 ARG SEARXNG_API_URL
 ENV SEARXNG_API_URL=${SEARXNG_API_URL}
@@ -14,7 +14,11 @@ COPY yarn.lock /home/perplexica/
 
 RUN mkdir /home/perplexica/data
 
-RUN python -v
+RUN apt-get update || : && apt-get install -y \
+    python \
+    build-essential
+
+RUN python --version
 
 RUN yarn --network-timeout 100000
 RUN yarn install 
