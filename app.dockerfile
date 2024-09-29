@@ -9,6 +9,7 @@ WORKDIR /home/perplexica
 
 COPY ui /home/perplexica/
 
+RUN yarn --network-timeout 100000
 RUN yarn install
 RUN yarn build
 

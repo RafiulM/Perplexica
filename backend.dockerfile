@@ -14,6 +14,7 @@ COPY yarn.lock /home/perplexica/
 
 RUN mkdir /home/perplexica/data
 
+RUN yarn --network-timeout 100000
 RUN yarn install 
 RUN yarn build
 
