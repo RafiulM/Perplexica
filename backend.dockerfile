@@ -15,10 +15,10 @@ COPY yarn.lock /home/perplexica/
 RUN mkdir /home/perplexica/data
 
 RUN apt-get update || : && apt-get install -y \
-    python \
+    python-is-python3 \
     build-essential
 
-RUN python --version
+RUN python3 --version
 
 RUN yarn --network-timeout 100000
 RUN yarn install 
