@@ -14,6 +14,10 @@ COPY yarn.lock /home/perplexica/
 
 RUN mkdir /home/perplexica/data
 
+RUN apt-get update
+
+RUN apt-get install -y python
+
 RUN yarn --network-timeout 100000
 RUN yarn install 
 RUN yarn build
