@@ -1,20 +1,13 @@
-import ChatWindow from '@/components/ChatWindow';
+import LandingPage from '@/components/LandingPage';
 import { Metadata } from 'next';
-import { Suspense } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Chat - Perplexica',
-  description: 'Chat with the internet, chat with Perplexica.',
+  title: 'Perplexica - AI-Powered Search & Chat',
+  description: 'Search, chat, and discover with AI-powered intelligence. Perplexica combines web search with conversational AI.',
 };
 
 const Home = () => {
-  return (
-    <div>
-      <Suspense>
-        <ChatWindow />
-      </Suspense>
-    </div>
-  );
+  return <LandingPage />;
 };
 
 export default Home;

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Design Landing Page UI Layout",
+    "description": "Create a clean, intuitive landing page layout for Perplexica, focusing on the chat/search interface as described in the PRD.",
+    "details": "Use Next.js and Tailwind CSS to design the landing page. The layout should include: a prominent query input box at the top, a dropdown for selecting focus modes (e.g., Web Search, Academic), a chat history area below for displaying past questions and answers, and a settings panel or sidebar for API key input and model selection. Ensure the design is responsive for desktop and tablet. Follow usability and accessibility best practices. Use placeholder components for dynamic content (chat, settings) to be implemented later.",
+    "status": "pending",
+    "test_strategy": "Manually verify layout on multiple screen sizes (desktop, tablet). Check that all UI elements are present and visually aligned with the PRD. Use accessibility tools (e.g., Lighthouse) to ensure compliance. Confirm that placeholder components render without errors.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "9f409889-5169-4f25-ac05-84e4045852e8",
+    "parent_task_id": null,
+    "id": "2d0a87e2-3491-404d-b679-c76bb995c253",
+    "created_at": "2025-08-08T03:01:48.339877Z",
+    "user_id": "user_2qXKC3eZTjQJhRR30uDzhnVJfMe",
+    "subtasks": []
+  },
+  {
+    "title": "Implement Query Input and Focus Mode Dropdown",
+    "description": "Develop the interactive query input box and focus mode dropdown as functional components on the landing page.",
+    "details": "Using Next.js and Tailwind CSS, implement a single-line input for user queries and a dropdown for selecting focus modes. Ensure the input is accessible (label, ARIA attributes) and the dropdown options are dynamically configurable (e.g., Web Search, Academic). Prepare event handlers for future integration with backend/WebSocket logic. Validate input for basic sanitation (no empty queries, prevent prompt injection).",
+    "status": "pending",
+    "test_strategy": "Test input and dropdown for accessibility, keyboard navigation, and correct rendering. Validate that input accepts text and dropdown updates selected mode. Attempt invalid input to confirm sanitation. Use React Testing Library for component-level tests.",
+    "priority": "high",
+    "ordinal": 1,
+    "task_group_id": "9f409889-5169-4f25-ac05-84e4045852e8",
+    "parent_task_id": null,
+    "id": "27e402f7-c9de-4dd2-96a7-68a2ad286f3b",
+    "created_at": "2025-08-08T03:01:48.339887Z",
+    "user_id": "user_2qXKC3eZTjQJhRR30uDzhnVJfMe",
+    "subtasks": []
+  },
+  {
+    "title": "Set Up Project Structure with Next.js and Tailwind CSS",
+    "description": "Initialize the project repository with Next.js and Tailwind CSS, setting up the base structure for the landing page and future expansion.",
+    "details": "Create a new Next.js project. Integrate Tailwind CSS according to official documentation. Set up the initial file structure: pages, components, styles, and a placeholder for the landing page. Configure Prettier and ESLint for code formatting and linting. Add a README with setup instructions. Ensure the development environment matches the PRD tech stack requirements.",
+    "status": "pending",
+    "test_strategy": "Run the development server and verify Tailwind styles are applied. Check that the project builds without errors. Lint the codebase and confirm no major issues. Review the README for completeness.",
+    "priority": "medium",
+    "ordinal": 2,
+    "task_group_id": "9f409889-5169-4f25-ac05-84e4045852e8",
+    "parent_task_id": null,
+    "id": "7ba6f615-8dc9-4e49-80de-33364eaca6e9",
+    "created_at": "2025-08-08T03:01:48.339889Z",
+    "user_id": "user_2qXKC3eZTjQJhRR30uDzhnVJfMe",
+    "subtasks": []
+  }
+]
